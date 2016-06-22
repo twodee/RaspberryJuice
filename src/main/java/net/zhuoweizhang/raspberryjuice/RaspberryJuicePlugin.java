@@ -30,11 +30,11 @@ public class RaspberryJuicePlugin extends JavaPlugin implements Listener {
 
 	public void onEnable() {
 		//save a copy of the default config.yml if one is not there
-        this.saveDefaultConfig();
-        //get port from config.yml
+    this.saveDefaultConfig();
+    //get port from config.yml
 		int port = this.getConfig().getInt("port");
         
-        //setup session array
+    //setup session array
 		sessions = new ArrayList<RemoteSession>();
 		
 		//create new tcp listener thread

@@ -132,6 +132,12 @@ public class RemoteSession {
 			if (c.equals("world.getBlock")) {
 				Location loc = parseRelativeBlockLocation(args[0], args[1], args[2]);
 				send(world.getBlockTypeIdAt(loc));
+
+      } else if (c.equals("world.day")) {
+			  world.setTime(0);	
+
+      } else if (c.equals("world.time")) {
+			  world.setTime(Integer.parseInt(args[0]));	
 				
 			// world.getBlocks
 			} else if (c.equals("world.getBlocks")) {
