@@ -138,6 +138,9 @@ public class RemoteSession {
 
       } else if (c.equals("world.time")) {
 			  world.setTime(Integer.parseInt(args[0]));	
+
+      } else if (c.equals("world.setStorm")) {
+			  world.setStorm(Boolean.parseBoolean(args[0]));	
 				
 			// world.getBlocks
 			} else if (c.equals("world.getBlocks")) {

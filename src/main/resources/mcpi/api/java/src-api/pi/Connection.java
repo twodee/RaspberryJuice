@@ -86,7 +86,7 @@ class Connection {
         close(in, out);
         try {
             socket.close();
-        } catch (IOException _) {
+        } catch (IOException e) {
         }
     }
 
@@ -96,7 +96,7 @@ class Connection {
                 if (c != null) {
                     c.close();
                 }
-            } catch (IOException _) {
+            } catch (IOException e) {
             }
         }
     }

@@ -23,7 +23,7 @@ public class DigitalClock {
             }
             try {
                 Thread.sleep(100);
-            } catch (InterruptedException _) {
+            } catch (InterruptedException e) {
             }
         }
     }
